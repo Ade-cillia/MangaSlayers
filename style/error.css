@@ -1,0 +1,33 @@
+.flex{
+    display: flex;
+}
+.general{
+    width: 50%;
+    float: left;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+.robot{
+    width: 60%
+}
+.imgGoogle{
+    width: 50%;
+    height: 40%;
+}
+.align{
+    margin-left: 0px;
+}
+
+
+.robotImage{
+    margin-left: -20%;
+    width: 2%;
+    height: 90%;
+}
+
+p{
+    margin-right: 50%;
+}
+h4{
+    margin-right: 30%;
+}
