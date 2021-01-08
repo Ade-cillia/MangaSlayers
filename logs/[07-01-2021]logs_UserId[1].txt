@@ -158,3 +158,23 @@ sdsfsd
 [07-01-2021|19:46]: jeandu00@carabistouille.fr a consulté la page /home
 [07-01-2021|19:46]: jeandu00@carabistouille.fr a consulté la page /account
 [07-01-2021|19:46]: jeandu00@carabistouille.fr a consulté la page /home
+[07-01-2021|20:10]: jeandu00@carabistouille.fr a consulté la page /home
+[07-01-2021|20:10]: jeandu00@carabistouille.fr a consulté la page /home
+[07-01-2021|20:10]: jeandu00@carabistouille.fr a consulté la page /page2
+[07-01-2021|20:10]: jeandu00@carabistouille.fr a consulté la page /account
+[07-01-2021|20:10]: jeandu00@carabistouille.fr a consulté la page /page2
+[07-01-2021|20:10]: jeandu00@carabistouille.fr a consulté la page /account
+[07-01-2021|20:10]: jeandu00@carabistouille.fr a consulté la page /myLogs
+[07-01-2021|21:36]: The user with id 1 is connected 
+email: jeandu00@carabistouille.fr
+[07-01-2021|21:36]: jeandu00@carabistouille.fr a consulté la page /login
+[07-01-2021|21:36]: jeandu00@carabistouille.fr a consulté la page /account
+[07-01-2021|21:36]: jeandu00@carabistouille.fr a consulté la page /home
+[07-01-2021|21:36]: jeandu00@carabistouille.fr a consulté la page /page1
+[07-01-2021|21:36]: jeandu00@carabistouille.fr a consulté la page /page2
+[07-01-2021|21:36]: jeandu00@carabistouille.fr a consulté la page /account
+vd
+sv
+ds
+
+	

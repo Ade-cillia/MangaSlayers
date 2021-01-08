@@ -3,7 +3,7 @@
 include './pdo_connection.php';
 include './layout/header.php';
 
-$url='';
+$url=''; //=Query strings
 if ( isset(explode("?", $_SERVER['REQUEST_URI'])[1]) ) {
 
     if(isset($_GET['modif'])){ // corrige un bug où $_SESSION['lastPage'] n'existe pas pour modifMyLogs après l'activation du bouton modifier

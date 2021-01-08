@@ -68,3 +68,10 @@
 [07-01-2021|17:53]: Unknown-user a consulté la page /page1
 [07-01-2021|17:53]: Unknown-user a consulté la page /home
 [07-01-2021|17:53]: Unknown-user a consulté la page /login
+[07-01-2021|21:32]: Unknown-user a consulté la page /home
+[07-01-2021|21:34]: Unknown-user a consulté la page /page1
+[07-01-2021|21:34]: Unknown-user a consulté la page /page2
+[07-01-2021|21:34]: Unknown-user a consulté la page /home
+[07-01-2021|21:35]: Unknown-user a consulté la page /login
+[07-01-2021|21:36]: Unknown-user a consulté la page /home
+[07-01-2021|21:36]: Unknown-user a consulté la page /login
