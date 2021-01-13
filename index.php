@@ -1,7 +1,10 @@
 <link rel="icon" type="image/png" href="./image/profile_discord.png" />
 <?php
+
 include './pdo_connection.php';
 include './layout/header.php';
+
+
 
 $url=''; //=Query strings
 if ( isset(explode("?", $_SERVER['REQUEST_URI'])[1]) ) {
@@ -13,7 +16,6 @@ if ( isset(explode("?", $_SERVER['REQUEST_URI'])[1]) ) {
     $url = explode("/AurelienDS".$_SESSION['lastPage'], $_SERVER['REQUEST_URI'])[1];
 
 }
-
 switch ($_SERVER['REQUEST_URI']){
     case '/AurelienDS/'.$url:
         include 'controller/controller_home.php';
@@ -59,15 +61,14 @@ switch ($_SERVER['REQUEST_URI']){
         break;
 }
 
+
+
+
+
 include 'controller/controller_logs.php';
-
-
 if (isset($_SESSION['email'])) {
     $_SESSION['visitedPage']+= 1;
 }
-
-
-
 include './layout/footer.php';
 
 

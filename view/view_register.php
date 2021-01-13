@@ -9,7 +9,7 @@
             <h1>Register</h1>
         </header>
         <main>
-            <form action="login.php" method="post" required>
+            <form action="register" method="post" required>
                 <div>
                     <label>Genre:</label>
                     <br>
@@ -22,12 +22,12 @@
                 <div>
                     <label>Nom:</label>
                     <br>
-                    <input type="text" name="name" value="" required>
+                    <input type="text" name="last_name" value="" required>
                 </div>
                 <div>
                     <label>Prénom:</label>
                     <br>
-                    <input type="text" name="firstName" value="" required>
+                    <input type="text" name="first_name" value="" required>
                 </div>
                 <div>
                     <label>Email:</label>
@@ -43,7 +43,7 @@
                     <label>Téléphone:</label>
                     <br>
                     <input type="tel" id="phone" name="phone"
-                    pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}"
+                    pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}"
                     placeholder="(format: 00.00.00.00.00)" required>
                 </div>
                 <br>
