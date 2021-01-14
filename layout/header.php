@@ -18,11 +18,18 @@ $login = ''; //variable qui sert à la ,detection du longin pour les logs
         <li>
             <a href="page2">Page 2</a>
         </li>
-
         <?php
         if (isset($_SESSION['email'])){
             echo "<li>";
             echo "  <a href='account'>Profile</a>";
+            echo "</li>";
+        }
+        if (!isset($_SESSION['email'])){
+            echo "<li>";
+            echo "  <a href='register'>Register</a>";
+            echo "</li>";
+            echo "<li>";
+            echo "  <a href='login'>Login</a>";
             echo "</li>";
         }
         ?>

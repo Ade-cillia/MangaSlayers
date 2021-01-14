@@ -1,0 +1,6 @@
+[14-01-2021|17:06]: The user with id 1 is connected 
+email: aureliendu3809@outlook.fr
+[14-01-2021|17:06]: aureliendu3809@outlook.fr a consulté la page /login
+[14-01-2021|17:06]: aureliendu3809@outlook.fr a consulté la page /account
+[14-01-2021|17:07]: aureliendu3809@outlook.fr a consulté la page /myLogs
+[14-01-2021|17:07]: aureliendu3809@outlook.fr a consulté la page /account

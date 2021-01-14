@@ -11,15 +11,6 @@
         <main>
             <form action="register" method="post" required>
                 <div>
-                    <label>Genre:</label>
-                    <br>
-                    <select name="gender" id="gender">
-                        <option value="M">Homme</option>
-                        <option value="M">Femme</option>
-                        <option value="Mx">Non-binaire</option>
-                    </select>
-                </div>
-                <div>
                     <label>Nom:</label>
                     <br>
                     <input type="text" name="last_name" value="" required>
@@ -43,7 +34,7 @@
                     <label>Téléphone:</label>
                     <br>
                     <input type="tel" id="phone" name="phone"
-                    pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}"
+                    pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}"
                     placeholder="(format: 00.00.00.00.00)" required>
                 </div>
                 <br>

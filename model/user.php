@@ -3,11 +3,11 @@ function addUser($pdo,$data){
     $first_name = $data['first_name'];
     $last_name = $data['last_name'];
     $email = $data['email'];
-    $gender = $data['gender'];
     $password = password_hash($data['password'],PASSWORD_BCRYPT);
+    $phone = $data['phone'];
     $sql = "
-        INSERT INTO user (first_name, last_name, email, gender, password)
-        VALUES (:first_name, :last_name, :email, :gender, :password);
+        INSERT INTO client (first_name, last_name, email, password, phone)
+        VALUES (:first_name, :last_name, :email, :password, :phone);
     ";
     $stnt = $pdo->prepare($sql);
 
@@ -17,8 +17,8 @@ function addUser($pdo,$data){
                     "first_name" => $first_name,
                     "last_name" => $last_name,
                     "email" => $email,
-                    "gender" => $gender,
-                    "password" => $password
+                    "password" => $password,
+                    "phone" => $phone
                 ]
             );
 
@@ -32,7 +32,7 @@ function addUser($pdo,$data){
 function getAllUsers($pdo){
     $sql ="
         SELECT *
-        FROM user
+        FROM client
     ";
 
     $stnt = $pdo->prepare($sql);
@@ -47,7 +47,7 @@ function getAllUsers($pdo){
 function getUser($pdo, $id){
     $sql ="
         SELECT *
-        FROM user
+        FROM client
         WHERE id = $id;
     ";
     $stnt = $pdo->prepare($sql);

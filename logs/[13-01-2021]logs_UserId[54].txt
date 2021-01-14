@@ -140,3 +140,8 @@ email: jean@jean.fr
 email: jean@jean.fr
 [13-01-2021|14:53]: jean@jean.fr a consulté la page /login
 [13-01-2021|14:53]: jean@jean.fr a consulté la page /account
+[13-01-2021|17:12]: jean@jean.fr a consulté la page /home
+[13-01-2021|17:12]: jean@jean.fr a consulté la page /home
+[13-01-2021|17:12]: jean@jean.fr a consulté la page /page1
+[13-01-2021|17:12]: jean@jean.fr a consulté la page /page2
+[13-01-2021|17:12]: jean@jean.fr a consulté la page /account

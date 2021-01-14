@@ -1,0 +1,4 @@
+[13-01-2021|17:17]: The user with id 55 is connected 
+email: po@po.fr
+[13-01-2021|17:17]: po@po.fr a consulté la page /login
+[13-01-2021|17:17]: po@po.fr a consulté la page /account
