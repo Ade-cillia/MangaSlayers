@@ -1,10 +1,8 @@
 <?php
 include 'model/user.php';
 include './view/view_login.php';
-
-
+$wrongPassword= false;
 foreach (getAllUsers($pdo) as $client) {
-
     if (isset($_POST['email'])){
         if ( password_verify($_POST['password'],$client['password']) && $_POST['email'] === $client['email'] ) {
             $_SESSION['id'] = $client['id'];
@@ -17,12 +15,12 @@ foreach (getAllUsers($pdo) as $client) {
             $login = '';
             header('Location: account');
             exit();
-        }else{
+        }elseif ($wrongPassword == false) {
+            $wrongPassword = true;
             echo "<br><br> Mot de passe invalide <br><br>";
             $login = 'loginFalse';
             include './controller/controller_logs.php';
             $login = '';
-            return;
         }
     }
 }

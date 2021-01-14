@@ -1,0 +1,6 @@
+[14-01-2021|17:24]: The user with id 4 is connected 
+email: MOUETTER@outlook.fr
+[14-01-2021|17:24]: MOUETTER@outlook.fr a consulté la page /login
+[14-01-2021|17:24]: MOUETTER@outlook.fr a consulté la page /account
+[14-01-2021|17:28]: MOUETTER@outlook.fr a consulté la page /page1
+[14-01-2021|17:28]: MOUETTER@outlook.fr a consulté la page /account

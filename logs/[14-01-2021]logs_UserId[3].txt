@@ -1,0 +1,15 @@
+[14-01-2021|17:38]: The user with id 3 is connected 
+email: potier@outlook.fr
+[14-01-2021|17:38]: potier@outlook.fr a consulté la page /login
+[14-01-2021|17:38]: potier@outlook.fr a consulté la page /account
+[14-01-2021|17:39]: potier@outlook.fr a consulté la page /myLogs
+[14-01-2021|17:40]: potier@outlook.fr a consulté la page /account
+[14-01-2021|17:40]: potier@outlook.fr a consulté la page /page2
+[14-01-2021|17:40]: potier@outlook.fr a consulté la page /account
+[14-01-2021|17:40]: potier@outlook.fr a consulté la page /myLogs
+[14-01-2021|17:41]: potier@outlook.fr a consulté la page /account
+[14-01-2021|17:41]: potier@outlook.fr a consulté la page /account
+[14-01-2021|17:41]: potier@outlook.fr a consulté la page /account
+[14-01-2021|17:41]: potier@outlook.fr a consulté la page /account
+[14-01-2021|17:41]: potier@outlook.fr a consulté la page /account
+[14-01-2021|17:41]: potier@outlook.fr a consulté la page /myLogs

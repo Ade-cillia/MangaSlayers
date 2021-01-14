@@ -4,3 +4,14 @@ email: aureliendu3809@outlook.fr
 [14-01-2021|17:06]: aureliendu3809@outlook.fr a consulté la page /account
 [14-01-2021|17:07]: aureliendu3809@outlook.fr a consulté la page /myLogs
 [14-01-2021|17:07]: aureliendu3809@outlook.fr a consulté la page /account
+[14-01-2021|17:16]: The user with id 1 is connected 
+email: aureliendu3809@outlook.fr
+[14-01-2021|17:16]: aureliendu3809@outlook.fr a consulté la page /login
+[14-01-2021|17:16]: aureliendu3809@outlook.fr a consulté la page /account
+[14-01-2021|17:16]: aureliendu3809@outlook.fr a consulté la page /page2
+[14-01-2021|17:18]: aureliendu3809@outlook.fr a consulté la page /home
+[14-01-2021|17:19]: aureliendu3809@outlook.fr a consulté la page /account
+[14-01-2021|17:31]: The user with id 1 is connected 
+email: aureliendu3809@outlook.fr
+[14-01-2021|17:31]: aureliendu3809@outlook.fr a consulté la page /login
+[14-01-2021|17:31]: aureliendu3809@outlook.fr a consulté la page /account
