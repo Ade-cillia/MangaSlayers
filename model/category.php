@@ -1,7 +1,7 @@
 <?php
 function getTitle($pdo,$id_Category){
     $sql ="
-        SELECT name,image
+        SELECT name,image,id
         FROM manga_title
         WHERE id_category = $id_Category;
     ";

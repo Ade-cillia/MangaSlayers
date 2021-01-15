@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>catégorie: </title>
+<title>catégorie </title>
 <link rel="stylesheet" href="./style/category.css">
 <link rel="stylesheet" href="./style/home.css">
 <div class="chercher floatLeft positionAbsolute">
@@ -17,7 +17,7 @@
     </div>
 </div>
 
-<div>
+<div class="categoryTitle">
     <h1 class="categoryTitle">
         <?php
             echo getCategoryName($pdo,$_GET["id_category"])[0]['name'];
@@ -30,7 +30,7 @@
     if (!empty($_GET) && getTitle($pdo,$_GET["id_category"]) ) {
         foreach (getTitle($pdo,$_GET["id_category"]) as $key => $value) {
             echo "<div class='general'>";
-            echo "<li class='liTitle'><a class='aTitle' href='home'>";
+            echo "<li class='liTitle'><a class='aTitle' href='item?id_manga_title=".$value['id']."'>";
             echo "<div>";
             echo "<div class='box'>";
             echo "  <img class='imageTitle' src='".$value["image"]."' alt=''>";
