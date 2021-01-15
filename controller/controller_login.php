@@ -26,7 +26,7 @@ foreach (getAllUsers($pdo) as $client) {
     }
 }*/
 if (isset($_POST['email'])){
-    foreach (getEmailPassword($pdo,$_POST['email'],$_POST['password']) as $client) {
+    foreach (getEmailPassword($pdo,$_POST['email']) as $client) {
         if ( password_verify($_POST['password'],$client['password']) && $_POST['email'] === $client['email'] ) {
             $_SESSION['id'] = startSession($pdo,$_POST['email'])[0]['id'];
             $_SESSION['firstName'] = startSession($pdo,$_POST['email'])[0]['first_name'];
@@ -36,8 +36,8 @@ if (isset($_POST['email'])){
             $login = 'loginTrue';
             include './controller/controller_logs.php';
             $login = '';
-            //header('Location: account');
-            //exit();
+            header('Location: account');
+            exit();
         }elseif ($wrongPassword == false) {
             $wrongPassword = true;
             echo "<br><br> Mot de passe invalide <br><br>";

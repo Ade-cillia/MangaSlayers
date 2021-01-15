@@ -18,3 +18,9 @@
 [15-01-2021|09:41]: Unknown-user a consulté la page /login
 [15-01-2021|12:14]: Unknown-user a consulté la page /login
 [15-01-2021|09:52]: Unknown-user a consulté la page /page2
+[15-01-2021|15:56]: Unknown-user a consulté la page /home
+[15-01-2021|15:56]: Unknown-user a consulté la page /register
+[15-01-2021|15:57]: Unknown-user a consulté la page /login
+[15-01-2021|15:57]: Unknown-user a consulté la page /login
+[15-01-2021|16:01]: Unknown-user a consulté la page /home
+[15-01-2021|16:01]: Unknown-user a consulté la page /login

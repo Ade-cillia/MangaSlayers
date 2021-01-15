@@ -1,0 +1,14 @@
+pre{
+    z-index: 30;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    position: fixed;
+    overflow-y: scroll;
+    max-height: 15rem;
+    border-top-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: aqua;
+    --tw-bg-opacity: 1;
+    border-color: aqua;
+}

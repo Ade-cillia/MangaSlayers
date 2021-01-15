@@ -1,3 +1,21 @@
+.categoryTitle{
+    margin-top: 40px;
+}
+
+.general{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.categoryName{
+    display: flex;
+    justify-content: center;
+
+}
+
 .allTitle{
     display: flex;
     margin-top: 40px;
@@ -8,7 +26,6 @@
 .box{
     display: flex;
     border: 1px black solid;
-    margin-top: 20px;
     width: 60%
 }
 .title{
@@ -18,4 +35,7 @@
 .numberBook{
     width: 30%;
     background-color: brown;
+}
+.imageTitle{
+    width: 100%;
 }
