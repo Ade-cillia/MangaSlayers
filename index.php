@@ -13,47 +13,47 @@ if ( isset(explode("?", $_SERVER['REQUEST_URI'])[1]) ) {
         $_SESSION['lastPage'] = '/modifMyLogs';
     }
     //var_dump($_SESSION['lastPage']);
-    $url = explode("/AurelienDS".$_SESSION['lastPage'], $_SERVER['REQUEST_URI'])[1];
+    $url = explode("/MangaSlayers".$_SESSION['lastPage'], $_SERVER['REQUEST_URI'])[1];
 
 }
 switch ($_SERVER['REQUEST_URI']){
-    case '/AurelienDS/'.$url:
+    case '/MangaSlayers/'.$url:
         include 'controller/controller_home.php';
         break;
-    case '/AurelienDS/home'.$url:
+    case '/MangaSlayers/home'.$url:
         include 'controller/controller_home.php';
         break;
-    case '/AurelienDS/login'.$url:
+    case '/MangaSlayers/login'.$url:
         include 'controller/controller_login.php';
         break;
-    case '/AurelienDS/register'.$url:
+    case '/MangaSlayers/register'.$url:
         include 'controller/controller_register.php';
         break;
-    case '/AurelienDS/account'.$url:
+    case '/MangaSlayers/account'.$url:
         if(isset($_SESSION['email'])){
             include 'controller/controller_account.php';
         }else {
             include 'controller/controller_login.php';
         }
         break;
-    case '/AurelienDS/myLogs'.$url:
+    case '/MangaSlayers/myLogs'.$url:
         if(isset($_SESSION['email'])){
             include 'controller/controller_myLogs.php';
         }else {
             include 'controller/controller_login.php';
         }
         break;
-    case '/AurelienDS/modifMyLogs'.$url:
+    case '/MangaSlayers/modifMyLogs'.$url:
         if(isset($_SESSION['email'])){
             include 'controller/controller_modifMyLogs.php';
         }else {
             include 'controller/controller_login.php';
         }
         break;
-    case '/AurelienDS/page1'.$url:
+    case '/MangaSlayers/page1'.$url:
         include 'controller/controller_page1.php';
         break;
-    case '/AurelienDS/page2'.$url:
+    case '/MangaSlayers/page2'.$url:
         include 'controller/controller_page2.php';
         break;
     default :

@@ -22,7 +22,7 @@ function myReadDir($path) {
     return $dir;
 }
 
-$listFolderLogs = myReadDir('C:\MAMP\htdocs\AurelienDS\logs');
+$listFolderLogs = myReadDir('C:\MAMP\htdocs\MangaSlayers\logs');
 //var_dump($listFolderLogs);
 if (isset($_GET['button'])) {
     var_dump($_GET['button']);

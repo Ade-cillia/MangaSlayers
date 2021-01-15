@@ -1,0 +1,4 @@
+[15-01-2021|09:43]: wesh@lol.com a consulté la page /myLogs
+[15-01-2021|09:43]: wesh@lol.com a consulté la page /page2
+[15-01-2021|09:43]: wesh@lol.com a consulté la page /page1
+[15-01-2021|09:44]: wesh@lol.com a consulté la page /home
