@@ -29,4 +29,19 @@ function getCategoryName($pdo,$id_Category){
         throw $e;
     }
 };
+function getCategoryId($pdo,$id_manga_title){
+    $sql ="
+        SELECT id_category
+        FROM manga_title
+        WHERE id = $id_manga_title;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
 ?>

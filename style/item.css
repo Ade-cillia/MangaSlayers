@@ -1,0 +1,48 @@
+h2{
+    display: flex;
+    justify-content: center;
+    margin: 10px 
+}
+.categoryTitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.general{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.blockItem{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 35%;
+    width: 35%;
+}
+.left{
+    height: 100%;
+    width: 30%;
+    background: fuchsia;
+    background-size: cover;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.right{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+}
+.nameItem{
+    background: chartreuse;
+    height: 30%;
+    width: 100%;
+}
+.Description{
+    background: aqua;
+    height: 70%;
+    width: 100%;
+}

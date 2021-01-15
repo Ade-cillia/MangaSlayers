@@ -16,7 +16,7 @@ if ( isset(explode("?", $_SERVER['REQUEST_URI'])[1]) ) {
     }elseif (isset($_GET['id_manga_title'])) {
         $_SESSION['lastPage'] = '/item';
     }
-    var_dump($_SESSION['lastPage']);
+    //var_dump($_SESSION['lastPage']);
     $url = explode("/MangaSlayers".$_SESSION['lastPage'], $_SERVER['REQUEST_URI'])[1];
 
 }
