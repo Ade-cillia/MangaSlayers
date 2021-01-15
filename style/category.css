@@ -1,10 +1,21 @@
 .allTitle{
     display: flex;
-    width: 70vw;
     margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 .box{
+    display: flex;
     border: 1px black solid;
     margin-top: 20px;
+    width: 60%
+}
+.title{
+    width: 70%;
+    background-color: aqua;
+}
+.numberBook{
+    width: 30%;
+    background-color: brown;
 }

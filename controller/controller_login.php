@@ -26,7 +26,6 @@ foreach (getAllUsers($pdo) as $client) {
     }
 }*/
 if (isset($_POST['email'])){
-
     foreach (getEmailPassword($pdo,$_POST['email'],$_POST['password']) as $client) {
         if ( password_verify($_POST['password'],$client['password']) && $_POST['email'] === $client['email'] ) {
             $_SESSION['id'] = startSession($pdo,$_POST['email'])[0]['id'];
