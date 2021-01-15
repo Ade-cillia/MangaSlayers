@@ -17,7 +17,7 @@
     </div>
 </div>
 
-<div class="categoryName">
+<div>
     <h1 class="categoryTitle">
         <?php
             echo getCategoryName($pdo,$_GET["id_category"])[0]['name'];
@@ -25,11 +25,13 @@
     </h1>
 </div>
 <div class="allTitle">
+    <ul class="ulTitle">
     <?php
-
     if (!empty($_GET) && getTitle($pdo,$_GET["id_category"]) ) {
         foreach (getTitle($pdo,$_GET["id_category"]) as $key => $value) {
             echo "<div class='general'>";
+            echo "<li class='liTitle'><a class='aTitle' href='home'>";
+            echo "<div>";
             echo "<div class='box'>";
             echo "  <img class='imageTitle' src='".$value["image"]."' alt=''>";
             echo "</div>";
@@ -46,10 +48,13 @@
             echo "  </div>";
             echo "</div>";
             echo "</div>";
+            echo "</a></li>";
+            echo "</div>";
         }
     }else{
         header("Location: home");
         exit();
     }
      ?>
+     </ul>
 </div>
