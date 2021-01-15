@@ -20,10 +20,12 @@
         <a href="category?id_category=7">Thriller</a>
         </div>
     </div>
-    <label for="site-search">Trouve ton manga:</label>
-    <input type="search" id="site-search" name="q"
-        aria-label="Search through site content">
-    <button>Chercher</button>
+    <form action="" class="search-bar">
+	<input type="search" name="search" pattern=".*\S.*" required>
+	<button class="search-btn" type="submit">
+		<span>Chercher</span>
+	</button>
+</form>
 </div>
 </body>
 </html>
