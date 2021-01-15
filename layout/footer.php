@@ -1,2 +1,2 @@
 <br><br><br><br><br><br>
-<p>Copyright (c) 2021 Copyright DE CILLIA corporation Holder All Rights Reserved.</p>
+<p>Copyright © 2021 Copyright Aurelien & Kenzi corporation Holder All Rights Reserved.</p>

@@ -61,15 +61,10 @@ switch ($_SERVER['REQUEST_URI']){
         break;
 }
 
-
-
-
-
 include 'controller/controller_logs.php';
 if (isset($_SESSION['email'])) {
     $_SESSION['visitedPage']+= 1;
 }
 include './layout/footer.php';
-
 
 ?>
