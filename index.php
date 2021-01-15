@@ -56,6 +56,9 @@ switch ($_SERVER['REQUEST_URI']){
     case '/MangaSlayers/page2'.$url:
         include 'controller/controller_page2.php';
         break;
+    case '/MangaSlayers/category'.$url:
+        include 'controller/controller_category.php';
+        break;
     default :
         include 'controller/controller_404.php';
         break;

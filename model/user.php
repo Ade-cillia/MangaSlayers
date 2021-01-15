@@ -58,6 +58,51 @@ function getUser($pdo, $id){
         $stnt->rollback();
         throw $e;
     }
+};
 
+
+
+
+
+
+//login
+function getEmailPassword($pdo, $email){
+    $sql ="
+        SELECT email, password
+        FROM client
+        WHERE email = :email;
+    ";
+
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute(
+            [
+                "email" => $email,
+            ]
+        );
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
+function startSession($pdo, $email){
+    $sql ="
+        SELECT *
+        FROM client
+        WHERE email = :email;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute(
+            [
+                "email" => $email,
+            ]
+        );
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
 };
  ?>

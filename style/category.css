@@ -1,0 +1,10 @@
+.allTitle{
+    display: flex;
+    width: 70vw;
+    margin-top: 40px;
+
+}
+.box{
+    border: 1px black solid;
+    margin-top: 20px;
+}

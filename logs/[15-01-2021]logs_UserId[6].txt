@@ -1,0 +1,22 @@
+[15-01-2021|12:21]: The user with id 6 is connected 
+email: pizo@mangercestbon.fr
+[15-01-2021|12:21]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|12:21]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|12:22]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:48]: The user with id 6 is connected 
+email: pizo@mangercestbon.fr
+[15-01-2021|13:48]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:48]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:48]: The user with id 6 is connected 
+email: pizo@mangercestbon.fr
+[15-01-2021|13:48]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:48]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:48]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:48]: pizo@mangercestbon.fr a consulté la page /page2
+[15-01-2021|13:48]: pizo@mangercestbon.fr a consulté la page /page1
+[15-01-2021|13:48]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:48]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:49]: pizo@mangercestbon.fr a consulté la page /myLogs
+[15-01-2021|13:49]: pizo@mangercestbon.fr a consulté la page /page2
+[15-01-2021|13:49]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:49]: pizo@mangercestbon.fr a consulté la page /page2

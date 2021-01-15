@@ -1,0 +1,35 @@
+[15-01-2021|13:13]: The user with id  is connected 
+email: pizo@mangercestbon.fr
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /page1
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /home
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:13]: The user with id  is connected 
+email: pizo@mangercestbon.fr
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /page1
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /page2
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /page1
+[15-01-2021|13:13]: pizo@mangercestbon.fr a consulté la page /home
+[15-01-2021|13:14]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:14]: The user with id  is connected 
+email: pizo@mangercestbon.fr
+[15-01-2021|13:14]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:14]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:14]: pizo@mangercestbon.fr a consulté la page /account
+[15-01-2021|13:29]: The user with id  is connected 
+email: pizo@mangercestbon.fr
+[15-01-2021|13:29]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:29]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:29]: The user with id  is connected 
+email: pizo@mangercestbon.fr
+[15-01-2021|13:29]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:29]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:29]: The user with id  is connected 
+email: pizo@mangercestbon.fr
+[15-01-2021|13:29]: pizo@mangercestbon.fr a consulté la page /login
+[15-01-2021|13:29]: pizo@mangercestbon.fr a consulté la page /login
