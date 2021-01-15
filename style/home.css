@@ -1,0 +1,52 @@
+html{
+    background-color: #e8e8e8;
+     font-family: sans-serif;
+   }
+
+.CatB {
+background-color: #0d4e99;
+color: white;
+border: none;
+cursor: pointer;
+padding:20px;
+margin-top:20px;
+font-size: 30px;
+}
+.CatB:hover {
+background-color: #193380;
+}
+.Cat1 {
+position: relative;
+display: inline-block;
+}
+.Cat2 {
+display: none;
+background-color: #11408a8a;
+min-width: 50px;
+}
+.Cat2 a {
+color: white;
+padding: 20px;
+text-decoration: none;
+display: block;
+}
+.Cat1:hover .Cat2 {
+display: block;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+    display: flex;
+}
+
+input,
+
+label {
+    margin:.4rem 0;
+}
+
+.chercher {
+    display: flex;
+}
+

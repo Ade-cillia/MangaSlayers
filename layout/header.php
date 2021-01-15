@@ -1,11 +1,11 @@
 <?php
 session_start();
-$login = ''; //variable qui sert à la ,detection du longin pour les logs
+$login = ''; //variable qui sert à la ,detection du login pour les logs
 
 //var_dump($_SESSION);
 ?>
 
-<link rel="stylesheet" href="./style/style.css">
+<link rel="stylesheet" href="./style/header.css">
 
 <nav class="menuNav">
     <ul>
@@ -33,6 +33,7 @@ $login = ''; //variable qui sert à la ,detection du longin pour les logs
             echo "</li>";
         }
         ?>
-
     </ul>
 </nav>
+
+
