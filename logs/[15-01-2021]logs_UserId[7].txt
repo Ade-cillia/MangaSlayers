@@ -1,0 +1,10 @@
+[15-01-2021|15:57]: The user with id 7 is connected 
+email: toto@ouii.fr
+[15-01-2021|15:57]: toto@ouii.fr a consulté la page /login
+[15-01-2021|15:57]: toto@ouii.fr a consulté la page /login
+[15-01-2021|15:57]: invalid email or password 
+[15-01-2021|15:57]: toto@ouii.fr a consulté la page /login
+[15-01-2021|15:57]: toto@ouii.fr a consulté la page /login
+[15-01-2021|16:01]: toto@ouii.fr a consulté la page /page1
+[15-01-2021|16:01]: toto@ouii.fr a consulté la page /page2
+[15-01-2021|16:01]: toto@ouii.fr a consulté la page /account

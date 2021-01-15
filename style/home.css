@@ -49,4 +49,13 @@ label {
 .chercher {
     display: flex;
 }
-
+.floatLeft{
+    float: left;
+}
+.floatRight{
+    float: Right;
+}
+.positionAbsolute{
+    width: 100%;
+    position: absolute;
+}

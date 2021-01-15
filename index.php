@@ -11,10 +11,12 @@ if ( isset(explode("?", $_SERVER['REQUEST_URI'])[1]) ) {
 
     if(isset($_GET['modif'])){ // corrige un bug où $_SESSION['lastPage'] n'existe pas pour modifMyLogs après l'activation du bouton modifier
         $_SESSION['lastPage'] = '/modifMyLogs';
-    }elseif ($_GET['id_category']) {
+    }elseif (isset($_GET['id_category'])) {
         $_SESSION['lastPage'] = '/category';
+    }elseif (isset($_GET['id_manga_title'])) {
+        $_SESSION['lastPage'] = '/item';
     }
-    //var_dump($_SESSION['lastPage']);
+    var_dump($_SESSION['lastPage']);
     $url = explode("/MangaSlayers".$_SESSION['lastPage'], $_SERVER['REQUEST_URI'])[1];
 
 }
@@ -60,6 +62,9 @@ switch ($_SERVER['REQUEST_URI']){
         break;
     case '/MangaSlayers/category'.$url:
         include 'controller/controller_category.php';
+        break;
+    case '/MangaSlayers/item'.$url:
+        include 'controller/controller_item.php';
         break;
     default :
         include 'controller/controller_404.php';
