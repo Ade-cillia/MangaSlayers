@@ -11,13 +11,13 @@
     <div class="Cat1">
         <button class="CatB">Catégories</button>
         <div class="Cat2">
-        <a href="ADRESSE HORREUR">Horreur</a>
-        <a href="ADRESSE AVENTURE">Aventure</a>
-        <a href="ADRESS HEROIC FANTASY">Heroic-Fantasy</a>
-        <a href="ADRESSE ROMANCE">Romance</a>
-        <a href="ADRESSE SOL">Slice-Of-Life</a>
-        <a href="ADRESSE ACTION">Action</a>
-        <a href="ADRESSE THRILLER">Thriller</a>
+        <a href="category?id_category=1">Horreur</a>
+        <a href="category?id_category=2">Aventure</a>
+        <a href="category?id_category=3">Heroic-Fantasy</a>
+        <a href="category?id_category=4">Romance</a>
+        <a href="category?id_category=5">Slice-Of-Life</a>
+        <a href="category?id_category=6">Action</a>
+        <a href="category?id_category=7">Thriller</a>
         </div>
     </div>
     <label for="site-search">Trouve ton manga:</label>
