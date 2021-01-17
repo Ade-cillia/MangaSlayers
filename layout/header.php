@@ -27,10 +27,11 @@ $login = ''; //variable qui sert à la ,detection du login pour les logs
             if (empty(getOrder($pdo,$_SESSION["id"]))){
                 $itemPannier = 0;
             }else{
-                $itemPannier = getCountContentOrder($pdo,$_SESSION['id_order'])[0]['CountContentOrder'];
+                $getorder = getOrder($pdo,$_SESSION["id"])[0]['id'];
+                $itemPannier = getCountContentOrder($pdo,$getorder)[0]['CountContentOrder'];
             }
             echo "<li>";
-            echo "  <a href='account'>Pannier: ".$itemPannier."</a>";
+            echo "  <a href='cart'>Pannier: ".$itemPannier."</a>";
             echo "</li>";
         }
         if (!isset($_SESSION['email'])){

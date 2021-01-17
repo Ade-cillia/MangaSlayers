@@ -84,11 +84,9 @@ function addContentOrder($pdo,$id,$id_item,$quantity){
 };
 function getCountContentOrder($pdo,$id_order){
     $sql = "
-        SELECT SUM(quantity) AS CountContentOrder
+        SELECT SUM(`quantity`) AS CountContentOrder
         FROM `content_order`
-        GROUP BY id;
         WHERE id = $id_order
-
     ";
     $stnt = $pdo->prepare($sql);
     try {
