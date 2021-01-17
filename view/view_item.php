@@ -33,7 +33,7 @@
         echo "          <strong>Description: </strong>".tronque_description($item['description'], 300);
         echo "      </div>";
         echo "      <div class='buyButtonDiv'>";
-        echo "          <form action='item?id_manga_title=".$_GET["id_manga_title"]."&buy_item=1' method='post'>";
+        echo "          <form action='item?id_manga_title=".$_GET["id_manga_title"]."&id_item=".$item['id']."&buy_item=1' method='post'>";
         echo "              <button id='buyButton' type='submit' name='buyButton'><h1>Ajouter au panier</h1></button>";
         echo "          </form>";
         echo "      </div>";

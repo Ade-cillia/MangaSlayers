@@ -14,12 +14,12 @@
                 <div>
                     <label>Nom:</label>
                     <br>
-                    <input type="text" name="last_name" value="" required>
+                    <input type="text" name="first_name" value="" required>
                 </div>
                 <div>
                     <label>Prénom:</label>
                     <br>
-                    <input type="text" name="first_name" value="" required>
+                    <input type="text" name="last_name" value="" required>
                 </div>
                 <div>
                     <label>Email:</label>
