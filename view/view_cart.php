@@ -22,6 +22,7 @@ foreach (getAllContentOrder($pdo,$_SESSION['id']) as $key => $allcontentOrder) {
                 echo '                <p><strong>Description: </strong>'.tronque_description($allItem['description'], 600).'</p>';
                 echo '            </div>';
                 echo '        </div>';
+
                 echo '        <div class="twoBlock">';
                 echo '            <div class="littleBlock">';
                 echo '            <h1 class="BigText">Prix Unitaire:</h1>';
@@ -30,6 +31,7 @@ foreach (getAllContentOrder($pdo,$_SESSION['id']) as $key => $allcontentOrder) {
                 echo '            <p><span class="priceItem">'.$allItem['price'].'€</span></p>';
                 echo '            </div>';
                 echo '        </div>';
+
                 echo '        <div class="twoBlock">';
                 echo '            <div class="littleBlock">';
                 echo '                 <h1 class="BigText">Quantité:</h1>';
@@ -38,9 +40,17 @@ foreach (getAllContentOrder($pdo,$_SESSION['id']) as $key => $allcontentOrder) {
                 echo '                 <input class="quantity" type="number" name="quantity" value="'.$allcontentOrder['quantity'].'">';
                 echo '            </div>';
                 echo '        </div>';
-                echo '        <div class="topright">';
-                echo '                 <button type="button"><a href="cart?del_item_cart='.$allcontentOrder['id_item'].'">Suprimer</a></button>';
+
+                echo '        <div class="twoBlock">';
+                echo '            <div class="littleBlock">';
+                echo '                 <h1 class="BigText">Quantité:</h1>';
+                echo '            </div>';
+                echo '            <div class="littleBlock">';
+                echo '                <button type="button"><a href="cart?del_item_cart='.$allcontentOrder['id_item'].'">Suprimer</a></button>';
+                echo '            </div>';
                 echo '        </div>';
+
+
                 echo '    </div>';
                 echo '</div>';
             }

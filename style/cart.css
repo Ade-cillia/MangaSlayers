@@ -60,15 +60,6 @@
     padding: 10px;
     border: 1px solid black;
 }
-.topright{
-    display: flex;
-    width: 10%;
-    height: 100%;
-    background-color: crimson;
-    border-left: 1px solid black;
-    justify-content: center;
-    align-items: center;
-}
 .quantity{
     width: 50%;
 }
