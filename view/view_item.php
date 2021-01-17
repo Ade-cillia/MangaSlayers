@@ -11,6 +11,7 @@
 <div class="categoryTitle">
     <h1 class="categoryTitle">
         <?php
+            //var_dump (getCategoryByItem($pdo,$_GET['id_manga_title']));
             echo getCategoryByItem($pdo,$_GET['id_manga_title'])[0]['name'];
          ?>
     </h1>
@@ -24,10 +25,17 @@
         echo "  </div>";
         echo "  <div class='right'>";
         echo "      <div class='nameItem'>";
-        echo "      <h2>".$item['name']."</h2>";
+        echo "          <h3><strong>Titre : &nbsp&nbsp</strong>".$item['name']."</h3>";
+        echo "          <div><strong>Autheur : </strong>".$item['authors']."</p></div>";
+        echo "          <div><strong>Prix : </strong>".$item['price']."€</p></div>";
         echo "      </div>";
         echo "      <div class='Description'>";
-        echo "      <strong>Description: </strong>".$item['description'];
+        echo "          <strong>Description: </strong>".tronque_description($item['description'], 300);
+        echo "      </div>";
+        echo "      <div class='buyButtonDiv'>";
+        echo "          <form action='item?id_manga_title=".$_GET["id_manga_title"]."&buy_item=1' method='post'>";
+        echo "              <button id='buyButton' type='submit' name='buyButton'><h1>Ajouter au panier</h1></button>";
+        echo "          </form>";
         echo "      </div>";
         echo "  </div>";
         echo "</div>";

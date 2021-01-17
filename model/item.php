@@ -29,4 +29,7 @@ function getCategoryByItem($pdo,$id_manga_title){
         throw $e;
     }
 };
+function getOrder($pdo,$id_user){
+    //
+};
  ?>
