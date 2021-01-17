@@ -82,4 +82,52 @@ function addContentOrder($pdo,$id,$id_item,$quantity){
         throw $e;
     }
 };
+function getCountContentOrder($pdo,$id_order){
+    $sql = "
+        SELECT SUM(quantity) AS CountContentOrder
+        FROM `content_order`
+        GROUP BY id;
+        WHERE id = $id_order
+
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+}
+function checkId_ItemInOrder($pdo, $id_oreder, $id_item){
+    $sql = "
+        SELECT *
+        FROM `content_order`
+        WHERE id_item = $id_item
+        and id = $id_oreder;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+}
+function updateQuantityItem($pdo,$id_item){
+    $sql = "
+        UPDATE `content_order`
+        SET `quantity`= `quantity`+1
+        WHERE id_item = $id_item;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+}
  ?>

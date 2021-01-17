@@ -19,9 +19,18 @@ $login = ''; //variable qui sert à la ,detection du login pour les logs
             <a href="page2">Page 2</a>
         </li>
         <?php
+        include './model/item.php';
         if (isset($_SESSION['email'])){
             echo "<li>";
             echo "  <a href='account'>Profile</a>";
+            echo "</li>";
+            if (empty(getOrder($pdo,$_SESSION["id"]))){
+                $itemPannier = 0;
+            }else{
+                $itemPannier = getCountContentOrder($pdo,$_SESSION['id_order'])[0]['CountContentOrder'];
+            }
+            echo "<li>";
+            echo "  <a href='account'>Pannier: ".$itemPannier."</a>";
             echo "</li>";
         }
         if (!isset($_SESSION['email'])){
@@ -32,8 +41,9 @@ $login = ''; //variable qui sert à la ,detection du login pour les logs
             echo "  <a href='login'>Login</a>";
             echo "</li>";
         }
+
+
         ?>
+
     </ul>
 </nav>
-
-
