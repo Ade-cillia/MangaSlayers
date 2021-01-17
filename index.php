@@ -66,6 +66,13 @@ switch ($_SERVER['REQUEST_URI']){
     case '/MangaSlayers/item'.$url:
         include 'controller/controller_item.php';
         break;
+    case '/MangaSlayers/cart'.$url:
+        if(isset($_SESSION['email'])){
+            include 'controller/controller_cart.php';
+        }else {
+            include 'controller/controller_login.php';
+        }
+        break;
     default :
         include 'controller/controller_404.php';
         break;

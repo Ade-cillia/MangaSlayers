@@ -33,7 +33,7 @@ if (isset($_GET["buy_item"])) { //Detect item acheté
             addContentOrder($pdo,$_SESSION['id_order'],$_GET['id_item'],$_GET['buy_item']);
         }
 
-        echo getItem($pdo,$_GET['id_manga_title'])[0]['name']." à été ajouté à votre pannier";
+        
         header("Location: item?id_manga_title=".$_GET['id_manga_title']);
         exit();
     }else{
