@@ -1,0 +1,74 @@
+.titleCart{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+.general{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.item{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    border: 2px solid black;
+}
+.imageDiv{
+    width: 10%;
+    height: 100%;
+    background-color: darksalmon;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.midle{
+    width: 60%;
+    height: 100%;
+    background-color: violet;
+    border-left: 1px solid black;
+}
+.titleItem{
+    width: 100%;
+    height: 40%;
+    background-color: aqua;
+    border-bottom: 1px solid black;
+}
+.twoBlock{
+    display: flex;
+    flex-wrap: wrap;
+    width: 10%;
+    height: 100%;
+    background-color: darkcyan;
+    border-left: 1px solid black;
+}
+.littleBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.BigText{
+    margin: 5%;
+    margin-top: 50%;
+}
+.priceItem{
+    padding: 10px;
+    border: 1px solid black;
+}
+.topright{
+    display: flex;
+    width: 10%;
+    height: 100%;
+    background-color: crimson;
+    border-left: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.quantity{
+    width: 50%;
+}

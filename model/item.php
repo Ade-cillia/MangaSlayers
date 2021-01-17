@@ -1,9 +1,9 @@
 <?php
-function getItem($pdo,$id_manga_title){
+function getItem($pdo,$id_manga_title,$id_item){
     $sql ="
         SELECT *
         FROM item
-        WHERE id_manga_title = $id_manga_title;
+        WHERE id_manga_title = $id_manga_title or id= $id_item ;
     ";
     $stnt = $pdo->prepare($sql);
     try {
@@ -126,6 +126,33 @@ function updateQuantityItem($pdo,$id_item){
     } catch (\Exception $e) {
         $stnt->rollback();
         throw $e;
+    }
+}
+function getAllContentOrder($pdo,$id_client){
+    $sql = "
+        SELECT `content_order`.*
+        FROM `content_order`
+        INNER JOIN `order`
+        ON `content_order`.id = `order`.id
+        WHERE id_client = $id_client
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+}
+function tronque_description($description, $lg_max) {
+    if (strlen($description) > $lg_max){
+        $description = substr($description, 0, $lg_max);
+        $last_space = strrpos($description, " ");
+        $description = substr($description, 0, $last_space)." ...";
+        return $description;
+    }else {
+        return $description;
     }
 }
  ?>

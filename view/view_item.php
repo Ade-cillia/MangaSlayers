@@ -18,7 +18,7 @@
 </div>
 <div class="general">
     <?php
-    foreach (getItem($pdo,$_GET['id_manga_title']) as $item) {
+    foreach (getItem($pdo,$_GET['id_manga_title'],-1) as $item) {
         echo "<div class='blockItem'>";
         echo "  <div class='left'>";
         echo "      <img class='image' src='".$item["image"]."'>";

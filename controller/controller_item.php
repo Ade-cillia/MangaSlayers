@@ -1,15 +1,6 @@
 <?php
 include './model/category.php';
-function tronque_description($description, $lg_max) {
-    if (strlen($description) > $lg_max){
-        $description = substr($description, 0, $lg_max);
-        $last_space = strrpos($description, " ");
-        $description = substr($description, 0, $last_space)." ...";
-        return $description;
-    }else {
-        return $description;
-    }
-}
+
 
 if (isset($_GET["buy_item"])) { //Detect item acheté
     if (isset($_SESSION["email"])) { //Detect connecter
@@ -33,7 +24,7 @@ if (isset($_GET["buy_item"])) { //Detect item acheté
             addContentOrder($pdo,$_SESSION['id_order'],$_GET['id_item'],$_GET['buy_item']);
         }
 
-        
+
         header("Location: item?id_manga_title=".$_GET['id_manga_title']);
         exit();
     }else{
