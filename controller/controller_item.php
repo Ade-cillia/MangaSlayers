@@ -18,7 +18,7 @@ if (isset($_GET["buy_item"])) { //Detect item acheté
         }
         //var_dump(!empty(checkId_ItemInOrder($pdo,$_SESSION['id_order'],$_GET['id_item'])[0]['id_item']));
         if (!empty(checkId_ItemInOrder($pdo,$_SESSION['id_order'],$_GET['id_item'])[0]['id_item']) ) {
-            updateQuantityItem($pdo,$_GET['id_item']);
+            addOneToQuantityItem($pdo,$_GET['id_item']);
             //var_dump($_GET['id_item']);
         }else{
             addContentOrder($pdo,$_SESSION['id_order'],$_GET['id_item'],$_GET['buy_item']);

@@ -113,7 +113,7 @@ function checkId_ItemInOrder($pdo, $id_oreder, $id_item){
         throw $e;
     }
 }
-function updateQuantityItem($pdo,$id_item){
+function addOneToQuantityItem($pdo,$id_item){
     $sql = "
         UPDATE `content_order`
         SET `quantity`= `quantity`+1

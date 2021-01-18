@@ -10,6 +10,7 @@
     width: 100%;
     margin-bottom: 10px;
 }
+
 .item{
     display: flex;
     height: 100%;
@@ -37,7 +38,7 @@
     background-color: aqua;
     border-bottom: 1px solid black;
 }
-.twoBlock{
+.threeBlock{
     display: flex;
     flex-wrap: wrap;
     width: 10%;
@@ -45,12 +46,18 @@
     background-color: darkcyan;
     border-left: 1px solid black;
 }
-.littleBlock{
+.littleBlock3{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: calc(100%/3);
+}
+.threeBlockForBuy{
+    display: flex;
+    flex-wrap: wrap;
+    width: 10%;
+    height: 100%;
 }
 .BigText{
     margin: 5%;
@@ -62,4 +69,32 @@
 }
 .quantity{
     width: 50%;
+}
+.stats{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 80%;
+}
+.totalPriceDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+.totalPrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    border: 4px solid black;
+}
+.generalForBuy{
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 10px;
 }
