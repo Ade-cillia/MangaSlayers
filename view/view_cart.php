@@ -77,11 +77,11 @@ foreach (getAllContentOrder($pdo,$_SESSION['id']) as $key => $allcontentOrder) {
         <div class="threeBlockForBuy">
             <div class="littleBlock3">
                 <div class="totalPrice">
-                    <p><?=$totalPrice?></p>
+                    <p><?=$totalPrice?> €</p>
                 </div>
             </div >
             <div class="littleBlock3">
-                
+
             </div >
             <div class="littleBlock3"></div >
 
