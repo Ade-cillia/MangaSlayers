@@ -18,11 +18,11 @@
 
 <div class="generalPayment">
     <div class="centerGeneralPayment">
-        <form action="index.html" method="post">
+        <form action="thanksBuy" method="post">
             <div class="formAddress">
                 <div>
                     <label>Adresse de livraison: </label><br>
-                    <input class="inputForm" type="text" name=""><br>
+                    <input class="inputForm" type="text" name="adress"><br>
                 </div>
             </div>
             <div class="PaymentMethode">
@@ -31,7 +31,7 @@
                             <img src="./image/paymentMethod/logo-cb.jpg" alt="logo-Carte-Bleu">
                     </div>
                     <div class="checkButton">
-                        <input type="radio" id="cb" name="paymentMethod" value="cb">
+                        <input type="radio" id="cb" name="paymentMethod" value="cb" required>
                     </div>
                 </label>
                 <label class="PaymentMethodeBlock" for="masterCard">
@@ -39,7 +39,7 @@
                             <img src="./image/paymentMethod/logo-masterCard.jpg" alt="logo-masterCard">
                     </div>
                     <div class="checkButton">
-                        <input type="radio" id="masterCard" name="paymentMethod" value="masterCard">
+                        <input type="radio" id="masterCard" name="paymentMethod" value="masterCard" required>
                     </div>
                 </label>
                 <label class="PaymentMethodeBlock" for="visa">
@@ -47,7 +47,7 @@
                             <img src="./image/paymentMethod/logo-visa.jpg" alt="logo-visa">
                     </div>
                     <div class="checkButton">
-                        <input type="radio" id="visa" name="paymentMethod" value="visa">
+                        <input type="radio" id="visa" name="paymentMethod" value="visa" required>
                     </div>
                 </label>
             </div>
@@ -59,9 +59,9 @@
                     <label>Numéro de carte: </label><br>
                     <input class="inputFormPayment" type="text" name="cardNumber" value="" required><br>
                     <label>Date d'Expiration: </label><br>
-                    <input class="inputFormPayment" type="date" name="nameCardUser" value="" required><br>
+                    <input class="inputFormPayment" type="date" name="expiration" value="" required><br>
                     <label>Cryptogramme: </label><br>
-                    <input class="inputFormPayment" type="number" name="nameCardUser" value="" required><br>
+                    <input class="inputFormPayment" type="number" name="crypto" value="" required><br>
                 </div>
             </div>
             <div class="paymentButton">
