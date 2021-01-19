@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 .menuNav{
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-    background-image: url("C:/MAMP/htdocs/MangaSlayers/image/ace.jpg");
+    background-image: url("../image/ace.jpg");
     height: 20%;
     min-height: 300px;
 }
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
+
 
 }
 .menuNav li{
