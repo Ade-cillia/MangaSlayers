@@ -79,8 +79,7 @@ label {
     display: flex;
     width: 90%;
     height: 100%;
-    position: absolute;
-    top: 38%; left:9%;
+    justify-content: flex-end   ;
 }
 
 .blockitemhome {
@@ -93,8 +92,15 @@ label {
     border: 1px black solid;
 }
 
-.selectedforyou {
-    text-align: justify;
-    height: 50%;
+.titletitle {
+    height: 10%;
     display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.fleex {
+    display: flex;
+    justify-content: flex-end;
+
 }
