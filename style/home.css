@@ -97,10 +97,22 @@ label {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top:40px;
+    text-decoration: underline;
 }
 
 .fleex {
     display: flex;
     justify-content: flex-end;
 
+}
+
+.search-btn {
+    display: flex;
+    justify-content:right;
+}
+
+.search {
+    display: flex;
+    justify-content: right;
 }
