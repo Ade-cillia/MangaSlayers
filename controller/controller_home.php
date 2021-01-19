@@ -1,5 +1,6 @@
 <?php
-var_dump($_SESSION);
+
+//var_dump($_SESSION);
 include './model/user.php';
 
 //var_dump(getAllUsers($pdo, 4));
