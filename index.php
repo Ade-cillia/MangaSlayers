@@ -73,6 +73,13 @@ switch ($_SERVER['REQUEST_URI']){
             include 'controller/controller_login.php';
         }
         break;
+    case '/MangaSlayers/payment'.$url:
+        if(isset($_SESSION['email'])){
+            include 'controller/controller_payment.php';
+        }else {
+            include 'controller/controller_login.php';
+        }
+        break;
     default :
         include 'controller/controller_404.php';
         break;

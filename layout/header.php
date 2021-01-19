@@ -32,8 +32,8 @@ $login = ''; //variable qui sert à la ,detection du login pour les logs
                 if ($itemPannier==null) {
                     $itemPannier = 0;
                 }
-
             }
+            $_SESSION['itemPannier'] = $itemPannier;
             echo "<li>";
             echo "  <a href='cart'>Pannier: ".$itemPannier."</a>";
             echo "</li>";

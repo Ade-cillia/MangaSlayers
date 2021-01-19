@@ -98,3 +98,9 @@
     width: 100%;
     margin-bottom: 10px;
 }
+.threeBlockForBuyModif{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 100%;
+}
