@@ -69,11 +69,32 @@ label {
 }   
 .floatRight{
     float: Right;
-    display: flex;
 }
 .positionAbsolute{
     width: 100%;
     position: absolute;
-    top: 38%; left: 10%;
+}
 
+.generalhome{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 38%; left:9%;
+}
+
+.blockitemhome {
+    margin-top: 40px;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 35%;
+    width: 30%;
+    border: 1px black solid;
+}
+
+.selectedforyou {
+    text-align: justify;
+    height: 50%;
+    display: flex;
 }

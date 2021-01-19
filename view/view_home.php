@@ -28,12 +28,15 @@
 	</button>
 </form>
 </div>
-<div class="general floatRight floatLeft positionAbsolute">
+<div class="selectedforyou">
+<h1>Selectionnés pour vous</h1>
+</div>
+<div class="generalhome floatRight floatLeft positionAbsolute Aurelpascontent">
     <?php
     foreach ($itemforyou as $itemsforyou) {
         //echo($itemsforyou);
         foreach (getItem($pdo,-1,$itemsforyou) as $item) {
-            echo "<div class='blockItem'>";
+            echo "<div class='blockItemhome'>";
             echo "  <div class='left'>";
             echo "      <img class='image' src='".$item["image"]."'>";
             echo "  </div>";
@@ -47,7 +50,7 @@
             echo "          <strong>Description: </strong>".tronque_description($item['description'], 250);
             echo "      </div>";
             echo "      <div class='buyButtonDiv'>";
-            echo "          <form action='item?id_manga_title=".$itemsforyou."&id_item=".$item['id']."&buy_item=1' method='post'>";
+            echo "          <form action='home?id_manga_title=".$itemsforyou."&id_item=".$item['id']."&buy_item=1&home_buy=true' method='post'>";
             echo "              <button id='buyButton' type='submit' name='buyButton'><h1>Ajouter au panier</h1></button>";
             echo "          </form>";
             echo "      </div>";
@@ -56,6 +59,9 @@
         }
     }   
     ?>
+</div>
+<div class="meilleursventes">
+<h1>Meilleurs Ventes</h1>
 </div>
 </body>
 </html>
