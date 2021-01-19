@@ -10,7 +10,7 @@
                 <h1>Montant Totale (TTC): <?= $_SESSION['totalPrice']?> €</h1>
             </div>
             <div class="tva">
-                <h3>TVA (5.5%): <?= round($_SESSION['totalPrice']-($_SESSION['totalPrice']/(1.055)), 2) ?> €</h3>
+                <h3>TVA (5.5%): <?= $_SESSION['TVA'] ?> €</h3>
             </div>
         </div>
     </div>

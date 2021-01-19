@@ -10,6 +10,7 @@ if (isset($_GET["buy_item"])) { //Detect item acheté
                 if ($order['paid']==0) {
                     $existingOrder= true;
                     $_SESSION['id_order']=$order['id'];
+                    $_SESSION['id_order_paid']=0;
                 }
             }
         }

@@ -33,7 +33,7 @@ function getOrder($pdo,$id_client){
     $sql ="
         SELECT *
         FROM `order`
-        WHERE id_client = $id_client;
+        WHERE id_client = $id_client and `order`.paid = 0;
     ";
     $stnt = $pdo->prepare($sql);
     try {
@@ -83,10 +83,13 @@ function addContentOrder($pdo,$id,$id_item,$quantity){
     }
 };
 function getCountContentOrder($pdo,$id_order){
+    $id_order_paid = $_SESSION['id_order_paid'];
     $sql = "
         SELECT SUM(`quantity`) AS CountContentOrder
         FROM `content_order`
-        WHERE id = $id_order
+        INNER JOIN `order`
+        ON `content_order`.id = `order`.id
+        WHERE `content_order`.id = $id_order AND `order`.paid = 0;
     ";
     $stnt = $pdo->prepare($sql);
     try {
@@ -134,7 +137,7 @@ function getAllContentOrder($pdo,$id_client){
         FROM `content_order`
         INNER JOIN `order`
         ON `content_order`.id = `order`.id
-        WHERE id_client = $id_client
+        WHERE id_client = $id_client AND `order`.paid=0
     ";
     $stnt = $pdo->prepare($sql);
     try {
