@@ -83,7 +83,6 @@ function addContentOrder($pdo,$id,$id_item,$quantity){
     }
 };
 function getCountContentOrder($pdo,$id_order){
-    $id_order_paid = $_SESSION['id_order_paid'];
     $sql = "
         SELECT SUM(`quantity`) AS CountContentOrder
         FROM `content_order`

@@ -10,7 +10,7 @@
                 <h1>Montant Totale (TTC): <?= $_SESSION['totalPrice']?> €</h1>
             </div>
             <div class="tva">
-                <h3>TVA (5.5%): <?= $_SESSION['TVA'] ?> €</h3>
+                <h3>TVA (5.5%): <?= $_SESSION['tva'] ?> €</h3>
             </div>
         </div>
     </div>

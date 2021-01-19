@@ -77,4 +77,29 @@ function addPaidToOrder($pdo,$id_order){
         throw $e;
     }
 };
+
+function addOrderedItemSnapshot($pdo,$id_order,$name_item,$price,$quantity,$id_manga_title,$category){
+    $sql = "
+        INSERT INTO `ordered_item_snapshot` (id_order, name_item, price,quantity, id_manga_title, category)
+        VALUES (:id_order, :name_item, :price, :quantity, :id_manga_title, :category);
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute(
+            [
+                "id_order" => $id_order,
+                "name_item" => $name_item,
+                "price" => $price,
+                "quantity" => $quantity,
+                "id_manga_title" => $id_manga_title,
+                "category" => $category
+            ]
+        );
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
+
 ?>
