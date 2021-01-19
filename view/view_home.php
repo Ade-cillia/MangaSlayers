@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/item.css">
     <title>Accueil</title>
 </head>
 <body>
@@ -26,6 +27,35 @@
 		<span>Chercher</span>
 	</button>
 </form>
+</div>
+<div class="general floatRight floatLeft positionAbsolute">
+    <?php
+    foreach ($itemforyou as $itemsforyou) {
+        //echo($itemsforyou);
+        foreach (getItem($pdo,-1,$itemsforyou) as $item) {
+            echo "<div class='blockItem'>";
+            echo "  <div class='left'>";
+            echo "      <img class='image' src='".$item["image"]."'>";
+            echo "  </div>";
+            echo "  <div class='right'>";
+            echo "      <div class='nameItem'>";
+            echo "          <h3><strong>Titre : &nbsp&nbsp</strong>".$item['name']."</h3>";
+            echo "          <div><strong>Autheur : </strong>".$item['authors']."</p></div>";
+            echo "          <div><strong>Prix : </strong>".$item['price']."€</p></div>";
+            echo "      </div>";
+            echo "      <div class='Description'>";
+            echo "          <strong>Description: </strong>".tronque_description($item['description'], 250);
+            echo "      </div>";
+            echo "      <div class='buyButtonDiv'>";
+            echo "          <form action='item?id_manga_title=".$itemsforyou."&id_item=".$item['id']."&buy_item=1' method='post'>";
+            echo "              <button id='buyButton' type='submit' name='buyButton'><h1>Ajouter au panier</h1></button>";
+            echo "          </form>";
+            echo "      </div>";
+            echo "  </div>";
+            echo "</div>";
+        }
+    }   
+    ?>
 </div>
 </body>
 </html>

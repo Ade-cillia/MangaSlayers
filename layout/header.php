@@ -46,9 +46,6 @@ $login = ''; //variable qui sert à la ,detection du login pour les logs
             echo "  <a href='login'>Login</a>";
             echo "</li>";
         }
-
-
         ?>
-
     </ul>
 </nav>

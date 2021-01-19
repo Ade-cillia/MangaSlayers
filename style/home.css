@@ -1,5 +1,5 @@
 html{
-    background-color: #e8e8e8;
+    background-color: #f0f0f0;
      font-family: sans-serif;
    }
 
@@ -66,11 +66,14 @@ label {
 }
 .floatLeft{
     float: left;
-}
+}   
 .floatRight{
     float: Right;
+    display: flex;
 }
 .positionAbsolute{
     width: 100%;
     position: absolute;
+    top: 38%; left: 10%;
+
 }
