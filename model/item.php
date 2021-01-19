@@ -44,6 +44,39 @@ function getOrder($pdo,$id_client){
         throw $e;
     }
 };
+
+function getOrderAlreadyPaid($pdo,$id_client){
+    $sql ="
+        SELECT *
+        FROM `order`
+        WHERE id_client = $id_client and `order`.paid = 1;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
+
+function getOrderedItemSnapshot($pdo,$orderPaid_id){
+    $sql ="
+        SELECT *
+        FROM `ordered_item_snapshot`
+        WHERE id_order = $orderPaid_id;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
+
 function addOrder($pdo,$id_client){
     $sql = "
         INSERT INTO `order` (id_client, paid)

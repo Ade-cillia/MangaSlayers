@@ -37,5 +37,5 @@ exit();
 
 
 
-
+$_SESSION['lastPage'] = '/buyAnItem';
 ?>
