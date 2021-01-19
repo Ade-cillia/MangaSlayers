@@ -81,7 +81,7 @@ foreach (getAllContentOrder($pdo,$_SESSION['id']) as $key => $allcontentOrder) {
             </div >
             <div class="littleBlock3">
                 <form class="" action="payment" method="post">
-                    <input type="submit" name="" value="Valider le pannier">
+                    <input type="submit" name="buy" value="Valider le pannier">
                 </form>
             </div >
             <div class="littleBlock3"></div >
