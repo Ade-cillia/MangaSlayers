@@ -3,7 +3,7 @@
 <div class="generalPrice">
     <div class="showPriceAndNBItem">
         <div class="NBItem">
-            <h1>Nombre de Lives: <?= $_SESSION['itemPannier']?></h1>
+            <h1>Nombre de Livres: <?= $_SESSION['itemPannier']?></h1>
         </div>
         <div class="priceAndTVA">
             <div class="price">

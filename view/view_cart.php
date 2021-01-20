@@ -17,7 +17,7 @@ foreach (getAllContentOrder($pdo,$_SESSION['id']) as $key => $allcontentOrder) {
                         <div class="midle">
                             <div class="titleItem">
                                 <h2>Titre: <?=$allItem['name']?></h2>
-                                <h4>Autheurs: <?=$allItem['authors']?></h4>
+                                <h4>Auteur(s): <?=$allItem['authors']?></h4>
                             </div>
                             <div class="description">
                                 <p><strong>Description: </strong><?=tronque_description($allItem['description'], 600)?></p>

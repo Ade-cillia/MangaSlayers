@@ -3,11 +3,11 @@
 <link rel="stylesheet" href="./style/home.css">
     <head>
         <meta charset="utf-8">
-        <title>Register</title>
+        <title>S'enregistrer</title>
     </head>
     <body>
         <header>
-            <h1>Register</h1>
+            <h1>S'enregistrer</h1>
         </header>
         <main>
             <form action="register" method="post" required>

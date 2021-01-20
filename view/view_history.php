@@ -20,13 +20,10 @@ foreach (getOrderedItemSnapshot($pdo,$_GET['order']) as $orderSnapshot) {
             <h2>Titre: <?= $orderSnapshot['name_item'];?></h2>
         </div>
         <div class="border small">
-            <h2>Price: <?= $orderSnapshot['price'];?> €</h2>
+            <h2>Prix: <?= $orderSnapshot['price'];?> €</h2>
         </div>
         <div class="border small">
-            <h2>Quantity: <?= $orderSnapshot['quantity'];?></h2>
-        </div>
-        <div class="border small">
-            <h2>Quantity: <?= $orderSnapshot['quantity'];?></h2>
+            <h2>Quantité: <?= $orderSnapshot['quantity'];?></h2>
         </div>
         <div class="border large">
             <h2>Manga: <?= getTitle($pdo,$orderSnapshot['category'])[0]['name']; ?></h2>

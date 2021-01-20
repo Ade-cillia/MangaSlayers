@@ -3,11 +3,11 @@
     <head>
         <link rel="stylesheet" href="./style/home.css">
         <meta charset="utf-8">
-        <title>Login</title>
+        <title>Connection</title>
     </head>
     <body>
         <header>
-        <h1>Login</h1>
+        <h1>Connection</h1>
         </header>
         <main>
             <form action="login" method="post">

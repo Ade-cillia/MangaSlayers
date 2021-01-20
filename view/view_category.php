@@ -16,7 +16,6 @@
         </div>
     </div>
 </div>
-
 <div class="categoryTitle">
     <h1 class="categoryTitle">
         <?php
