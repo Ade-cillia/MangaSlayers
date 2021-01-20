@@ -9,6 +9,7 @@
     justify-content: center;
     justify-content: space-around;
     background-image: url("../image/ace.jpg");
+    background-size: 100% 250%;
     height: 20%;
     min-height: 300px;
 }
