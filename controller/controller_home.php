@@ -15,6 +15,11 @@ if (isset($_GET["buy_item"])) { //Detect item acheté
         }
         if ($existingOrder == false) {
             addOrder($pdo,$_SESSION["id"]);
+            foreach (getOrder($pdo,$_SESSION["id"]) as $order) { //Detect order non payé
+                if ($order['paid']==0) {
+                    $_SESSION['id_order']=$order['id'];
+                }
+            }
         }
         //var_dump(!empty(checkId_ItemInOrder($pdo,$_SESSION['id_order'],$_GET['id_item'])[0]['id_item']));
         if (!empty(checkId_ItemInOrder($pdo,$_SESSION['id_order'],$_GET['id_item'])[0]['id_item']) ) {

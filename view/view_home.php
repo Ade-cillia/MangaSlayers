@@ -38,7 +38,7 @@
             //echo($itemsforyou);
             foreach (getItem($pdo,-1,$itemsforyou) as $item) {
                 echo "<div class='blockItemhome'>";
-                echo "  <div class='left'>";
+                echo "  <div class='lefthome'>";
                 echo "      <img class='image' src='".$item["image"]."'>";
                 echo "  </div>";
                 echo "  <div class='right'>";
@@ -58,7 +58,7 @@
                 echo "  </div>";
                 echo "</div>";
             }
-        }   
+        }
         ?>
     </div>
 </div>
