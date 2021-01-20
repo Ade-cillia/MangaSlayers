@@ -56,15 +56,16 @@ function addPaymentMethod($pdo,$data){
 };
 
 
-function addPayment($pdo,$data,$id_payment_method){
+function addPayment($pdo,$data,$id_payment_method,$date){
     $sql = "
-        INSERT INTO `payment` (total_ht, tva, id_order,id_payment_method)
-        VALUES (:total_ht, :tva, :id_order, :id_payment_method);
+        INSERT INTO `payment` (date, total_ht, tva, id_order,id_payment_method)
+        VALUES (:date, :total_ht, :tva, :id_order, :id_payment_method);
     ";
     $stnt = $pdo->prepare($sql);
     try {
         $stnt->execute(
             [
+                "date" => $date,
                 "total_ht" => $data['price_ht'],
                 "tva" => $data['tva'],
                 "id_order" => $data['id_order'],

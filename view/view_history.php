@@ -9,7 +9,7 @@
         ?>
     </div>
 </div>
-<h1 class="categoryTitle">Commande numéro : <?= $_GET['order']?> du [DATE] </h1>
+<h1 class="categoryTitle">Commande numéro : <?= $_GET['order']." du ".$date?> </h1>
 
 <?php
 foreach (getOrderedItemSnapshot($pdo,$_GET['order']) as $orderSnapshot) {

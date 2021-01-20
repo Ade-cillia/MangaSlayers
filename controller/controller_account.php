@@ -1,6 +1,5 @@
 <?php
-
-
+include './model/payment.php';
 if (isset($_GET['disconnect'])) {
     session_destroy();
     header('location: home');

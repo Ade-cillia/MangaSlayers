@@ -28,23 +28,19 @@
     <ul class="ulTitle">
     <?php
     if (!empty($_GET) && getTitle($pdo,$_GET["id_category"]) ) {
-        foreach (getTitle($pdo,$_GET["id_category"]) as $key => $value) {
+        foreach (getTitle($pdo,$_GET["id_category"]) as $manga_title) {
             echo "<div class='general'>";
-            echo "<li class='liTitle'><a class='aTitle' href='item?id_manga_title=".$value['id']."'>";
+            echo "<li class='liTitle'><a class='aTitle' href='item?id_manga_title=".$manga_title['id']."'>";
             echo "<div>";
             echo "<div class='box'>";
-            echo "  <img class='imageTitle' src='".$value["image"]."' alt=''>";
+            echo "  <img class='imageTitle' src='".$manga_title["image"]."' alt=''>";
             echo "</div>";
             echo "<div class='box'>";
             echo "  <div class='title'>";
-            echo "      <h1>";
-            echo "          ".$value["name"];
-            echo "      </h1>";
+            echo "      <h1>".$manga_title["name"]."</h1>";
             echo "  </div>";
             echo "  <div class='numberBook'>";
-            echo "      <h1>";
-            echo "          "."100";
-            echo "      </h1>";
+            echo "      <h1>Nombre de livres :".getCountBookInCategory($pdo,$manga_title['id'])[0]['numberBook']."</h1>";
             echo "  </div>";
             echo "</div>";
             echo "</div>";

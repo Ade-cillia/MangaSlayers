@@ -56,11 +56,11 @@ switch ($_SERVER['REQUEST_URI']){
             include 'controller/controller_login.php';
         }
         break;
-    case '/MangaSlayers/page1'.$url:
-        include 'controller/controller_page1.php';
+    case '/MangaSlayers/faq'.$url:
+        include 'controller/controller_faq.php';
         break;
-    case '/MangaSlayers/page2'.$url:
-        include 'controller/controller_page2.php';
+    case '/MangaSlayers/contact'.$url:
+        include 'controller/controller_contact.php';
         break;
     case '/MangaSlayers/category'.$url:
         include 'controller/controller_category.php';

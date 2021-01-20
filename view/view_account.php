@@ -10,6 +10,7 @@
 <h1>Mes Derniers Achats:</h1>
 <?php
 foreach (getOrderAlreadyPaid($pdo,$_SESSION['id']) as $orderPaid) {
-    echo '<p><a href="history?order='.$orderPaid['id'].'">Commande numéro '.$orderPaid['id'].'</a></p><br>';
+    $date = getPayment($pdo,$orderPaid['id'])[0]['date'];
+    echo '<p><a href="history?order='.$orderPaid['id'].'">Commande numéro '.$orderPaid['id'].' du '.$date.'</a></p><br>';
 }
  ?>

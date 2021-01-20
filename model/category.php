@@ -44,4 +44,19 @@ function getCategoryId($pdo,$id_manga_title){
         throw $e;
     }
 };
+function getCountBookInCategory($pdo,$id_manga_title){
+    $sql = "
+        SELECT COUNT(`id`) AS numberBook
+        FROM `item`
+        WHERE `id_manga_title` = $id_manga_title;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+}
 ?>
