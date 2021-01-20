@@ -1,0 +1,136 @@
+label{
+    font-size: 35px;;
+}
+.generalPrice{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.showPriceAndNBItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+    border: 4px solid black;
+
+}
+.NBItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 42%;
+    background: firebrick;
+    border-right: 4px solid black;
+}
+.priceAndTVA{
+    width: 58%;
+    height: 100%;
+
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    background: aqua;
+    border-bottom: 4px solid black;
+    box-sizing: border-box;
+}
+.tva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    background: lightblue;
+}
+.generalPayment{
+    display: flex;
+    justify-content: center;
+    background-color:  wheat;
+    height: 100%;
+    width: 100%;
+}
+.centerGeneralPayment{
+    background-color: darkseagreen;
+    border: 4px solid black;
+    height: 100%;
+    width: 55%;
+}
+.formAddress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+.formAddressPayment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+}
+.inputForm{
+    width: 100%;
+    height: 20%;
+}
+.inputFormPayment{
+    width: 100%;
+    height: 10%;
+}
+.PaymentMethode{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 20%;
+    width: 100%;
+    margin-top: 30px;
+}
+.PaymentMethodeBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+}
+.PaymentImage{
+    height: 50%;
+    width: 100%;
+}
+.PaymentImage img{
+    height: 100%;
+    width: 100%;
+}
+.checkButton input{
+    height: 30px;
+    width: 30px;
+}
+.formPayment{
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    width: 70%;
+}
+.expiAndCrypto{
+    display: flex;
+    margin-top: 20px;
+}
+.paymentButton{
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.paymentButton input{
+    width: 20%;
+    background-color: cyan;
+}

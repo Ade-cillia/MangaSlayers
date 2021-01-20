@@ -13,10 +13,10 @@ $login = ''; //variable qui sert à la ,detection du login pour les logs
             <a href="home">Accueil</a>
         </li>
         <li>
-            <a href="page1">Page 1</a>
+            <a href="faq">FAQ</a>
         </li>
         <li>
-            <a href="page2">Page 2</a>
+            <a href="contact">Contact</a>
         </li>
         <?php
         include './model/item.php';
@@ -32,8 +32,8 @@ $login = ''; //variable qui sert à la ,detection du login pour les logs
                 if ($itemPannier==null) {
                     $itemPannier = 0;
                 }
-
             }
+            $_SESSION['itemPannier'] = $itemPannier;
             echo "<li>";
             echo "  <a href='cart'>Pannier: ".$itemPannier."</a>";
             echo "</li>";

@@ -56,7 +56,8 @@ foreach (getAllContentOrder($pdo,$_SESSION['id']) as $key => $allcontentOrder) {
                     </div>
                 </div>
                 <?php
-                $totalPrice= $totalPrice + $allcontentOrder['quantity']*$allItem['price'];
+                $totalPrice = $totalPrice + $allcontentOrder['quantity']*$allItem['price'];
+                $_SESSION['totalPrice'] = $totalPrice;
             }
         }
     }
@@ -65,13 +66,11 @@ foreach (getAllContentOrder($pdo,$_SESSION['id']) as $key => $allcontentOrder) {
 </form>
 <div class="generalForBuy">
     <div class="stats">
-        <div class="threeBlockForBuy">
+        <div class="threeBlockForBuyModif">
             <div class="littleBlock3">
-                <h1>Prix total : </h1>
+                <h1>Prix total (TTC) </h1>
             </div >
-            <div class="littleBlock3">
-
-            </div >
+            <div class="littleBlock3"></div >
             <div class="littleBlock3"></div >
         </div>
         <div class="threeBlockForBuy">
@@ -81,7 +80,9 @@ foreach (getAllContentOrder($pdo,$_SESSION['id']) as $key => $allcontentOrder) {
                 </div>
             </div >
             <div class="littleBlock3">
-
+                <form class="" action="payment" method="post">
+                    <input type="submit" name="buy" value="Valider le pannier">
+                </form>
             </div >
             <div class="littleBlock3"></div >
 

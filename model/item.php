@@ -33,7 +33,7 @@ function getOrder($pdo,$id_client){
     $sql ="
         SELECT *
         FROM `order`
-        WHERE id_client = $id_client;
+        WHERE id_client = $id_client and `order`.paid = 0;
     ";
     $stnt = $pdo->prepare($sql);
     try {
@@ -44,6 +44,53 @@ function getOrder($pdo,$id_client){
         throw $e;
     }
 };
+function getOrderWithID_ORDER($pdo,$id_order){
+    $sql ="
+        SELECT *
+        FROM `order`
+        WHERE id = $id_order 
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
+function getOrderAlreadyPaid($pdo,$id_client){
+    $sql ="
+        SELECT *
+        FROM `order`
+        WHERE id_client = $id_client and `order`.paid = 1;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
+
+function getOrderedItemSnapshot($pdo,$orderPaid_id){
+    $sql ="
+        SELECT *
+        FROM `ordered_item_snapshot`
+        WHERE id_order = $orderPaid_id;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
+
 function addOrder($pdo,$id_client){
     $sql = "
         INSERT INTO `order` (id_client, paid)
@@ -86,7 +133,9 @@ function getCountContentOrder($pdo,$id_order){
     $sql = "
         SELECT SUM(`quantity`) AS CountContentOrder
         FROM `content_order`
-        WHERE id = $id_order
+        INNER JOIN `order`
+        ON `content_order`.id = `order`.id
+        WHERE `content_order`.id = $id_order AND `order`.paid = 0;
     ";
     $stnt = $pdo->prepare($sql);
     try {
@@ -134,7 +183,7 @@ function getAllContentOrder($pdo,$id_client){
         FROM `content_order`
         INNER JOIN `order`
         ON `content_order`.id = `order`.id
-        WHERE id_client = $id_client
+        WHERE id_client = $id_client AND `order`.paid=0
     ";
     $stnt = $pdo->prepare($sql);
     try {

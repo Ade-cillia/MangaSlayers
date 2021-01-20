@@ -61,10 +61,6 @@ function getUser($pdo, $id){
 };
 
 
-
-
-
-
 //login
 function getEmailPassword($pdo, $email){
     $sql ="

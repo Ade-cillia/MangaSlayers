@@ -1,4 +1,6 @@
 <?php
+
+//var_dump($_SESSION);
 include './model/user.php';
 if (isset($_GET["buy_item"])) { //Detect item acheté
     if (isset($_SESSION["email"])) { //Detect connecter

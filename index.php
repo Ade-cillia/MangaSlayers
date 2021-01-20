@@ -18,6 +18,8 @@ if ( isset(explode("?", $_SERVER['REQUEST_URI'])[1]) ) {
         if (isset($_GET['home_buy'])) {
             $_SESSION['lastPage'] = '/home';
         }
+    }elseif (isset($_GET['order'])) {
+        $_SESSION['lastPage'] = '/history';
     }
     //var_dump($_SESSION['lastPage']);
     $url = explode("/MangaSlayers".$_SESSION['lastPage'], $_SERVER['REQUEST_URI'])[1];
@@ -57,11 +59,11 @@ switch ($_SERVER['REQUEST_URI']){
             include 'controller/controller_login.php';
         }
         break;
-    case '/MangaSlayers/page1'.$url:
-        include 'controller/controller_page1.php';
+    case '/MangaSlayers/faq'.$url:
+        include 'controller/controller_faq.php';
         break;
-    case '/MangaSlayers/page2'.$url:
-        include 'controller/controller_page2.php';
+    case '/MangaSlayers/contact'.$url:
+        include 'controller/controller_contact.php';
         break;
     case '/MangaSlayers/category'.$url:
         include 'controller/controller_category.php';
@@ -72,6 +74,27 @@ switch ($_SERVER['REQUEST_URI']){
     case '/MangaSlayers/cart'.$url:
         if(isset($_SESSION['email'])){
             include 'controller/controller_cart.php';
+        }else {
+            include 'controller/controller_login.php';
+        }
+        break;
+    case '/MangaSlayers/payment'.$url:
+        if(isset($_SESSION['email'])){
+            include 'controller/controller_payment.php';
+        }else {
+            include 'controller/controller_login.php';
+        }
+        break;
+    case '/MangaSlayers/thanksBuy'.$url:
+        if(isset($_SESSION['email'])){
+            include 'controller/controller_thanksBuy.php';
+        }else {
+            include 'controller/controller_login.php';
+        }
+        break;
+    case '/MangaSlayers/history'.$url:
+        if(isset($_SESSION['email'])){
+            include 'controller/controller_history.php';
         }else {
             include 'controller/controller_login.php';
         }
