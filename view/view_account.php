@@ -1,5 +1,5 @@
-<title>Account</title>
-<h1>Account</h1>
+<title>Compte</title>
+<h1>Compte</h1>
 <p>Vous êtes connecté </p><br><br>
 <?= "Bonjour ".$_SESSION['firstName']." ".$_SESSION['lastName']."<br>";?>
 <?= "Email : ".$_SESSION['email']."<br><br>";?>
