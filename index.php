@@ -15,6 +15,8 @@ if ( isset(explode("?", $_SERVER['REQUEST_URI'])[1]) ) {
         $_SESSION['lastPage'] = '/category';
     }elseif (isset($_GET['id_manga_title'])) {
         $_SESSION['lastPage'] = '/item';
+    }elseif (isset($_GET['order'])) {
+        $_SESSION['lastPage'] = '/history';
     }
     //var_dump($_SESSION['lastPage']);
     $url = explode("/MangaSlayers".$_SESSION['lastPage'], $_SERVER['REQUEST_URI'])[1];
@@ -83,6 +85,13 @@ switch ($_SERVER['REQUEST_URI']){
     case '/MangaSlayers/thanksBuy'.$url:
         if(isset($_SESSION['email'])){
             include 'controller/controller_thanksBuy.php';
+        }else {
+            include 'controller/controller_login.php';
+        }
+        break;
+    case '/MangaSlayers/history'.$url:
+        if(isset($_SESSION['email'])){
+            include 'controller/controller_history.php';
         }else {
             include 'controller/controller_login.php';
         }

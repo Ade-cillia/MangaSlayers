@@ -55,13 +55,13 @@
             <div class="formAddressPayment">
                 <div>
                     <label>Nom du propriétaire: </label><br>
-                    <input class="inputFormPayment" type="text" name="nameCardUser" value="" required><br>
+                    <input class="inputFormPayment" type="text" name="nameCardUser" required><br>
                     <label>Numéro de carte: </label><br>
-                    <input class="inputFormPayment" type="text" name="cardNumber" value="" required><br>
+                    <input class="inputFormPayment" type="text" name="cardNumber" required><br>
                     <label>Date d'Expiration: </label><br>
-                    <input class="inputFormPayment" type="date" name="expiration" value="" required><br>
+                    <input class="inputFormPayment" type="month" name="expiration" required><br>
                     <label>Cryptogramme: </label><br>
-                    <input class="inputFormPayment" type="number" name="crypto" value="" required><br>
+                    <input class="inputFormPayment" type="number" name="crypto" required><br>
                 </div>
             </div>
             <div class="paymentButton">

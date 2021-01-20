@@ -18,6 +18,22 @@ function getPaymentMethod($pdo,$data){
         throw $e;
     }
 };
+function getPayment($pdo,$id_order){
+    $sql ="
+        SELECT *
+        FROM `payment`
+        WHERE id_order = $id_order ;
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
+
 function addPaymentMethod($pdo,$data){
     $sql = "
         INSERT INTO `payment_method` (method, value,id_client)

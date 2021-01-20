@@ -44,7 +44,21 @@ function getOrder($pdo,$id_client){
         throw $e;
     }
 };
-
+function getOrderWithID_ORDER($pdo,$id_order){
+    $sql ="
+        SELECT *
+        FROM `order`
+        WHERE id = $id_order 
+    ";
+    $stnt = $pdo->prepare($sql);
+    try {
+        $stnt->execute();
+        return $stnt->fetchAll();
+    } catch (\Exception $e) {
+        $stnt->rollback();
+        throw $e;
+    }
+};
 function getOrderAlreadyPaid($pdo,$id_client){
     $sql ="
         SELECT *

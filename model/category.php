@@ -17,7 +17,7 @@ function getTitle($pdo,$id_Category){
 function getCategoryName($pdo,$id_Category){
     $sql ="
         SELECT name
-        FROM category
+        FROM `category`
         WHERE id = $id_Category;
     ";
     $stnt = $pdo->prepare($sql);

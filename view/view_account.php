@@ -10,8 +10,6 @@
 <h1>Mes Derniers Achats:</h1>
 <?php
 foreach (getOrderAlreadyPaid($pdo,$_SESSION['id']) as $orderPaid) {
-    foreach (getOrderedItemSnapshot($pdo,$orderPaid['id']) as $orderSnapshot) {
-        var_dump($orderSnapshot);
-    }
+    echo '<p><a href="history?order='.$orderPaid['id'].'">Commande numéro '.$orderPaid['id'].'</a></p><br>';
 }
  ?>
